@@ -58,6 +58,21 @@ public:
     }
 
 };
+class Devloper:Employee
+{
+public:
+    string Favprogrammnerlanguage1;
+    Devloper(string name, int age, string characterstics,
+             string Favprogrammnerlanguage) : Employee(name, age, characterstics) {
+
+            Favprogrammnerlanguage1=Favprogrammnerlanguage;
+
+    }
+    void Fixbug()
+    {
+        cout<<"okay"<<endl;
+    }
+};
 int main()
 {
     Employee it=Employee("Eleven",19,"good");
