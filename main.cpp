@@ -70,21 +70,12 @@ public:
     }
     void Fixbug()
     {
-        cout<<"okay"<<endl;
+        cout<<getname()<<"Fixed bug using"<<Favprogrammnerlanguage1<<endl;
     }
 };
 int main()
 {
-    Employee it=Employee("Eleven",19,"good");
-    it.overall();
-    it.setName("NOBO");
-    cout<<it.getname()<<endl;
-    it.setAge(69);
-    cout<< it.getAge()<<endl;
-    it.AskForPromotion();
-    AbstractEmployee *it2;
-    it2 = new Employee("Ashik", 19, "good");
-    it2->AskForPromotion();
-    delete(it2);
+    Devloper d=Devloper("Saldina ",29," Good "," c++");
+    d.Fixbug();
 }
 
