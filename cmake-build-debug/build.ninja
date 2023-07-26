@@ -55,6 +55,12 @@ build CMakeFiles/C__practice.dir/main.cpp.obj: CXX_COMPILER__C__practice_Debug C
   OBJECT_DIR = CMakeFiles\C__practice.dir
   OBJECT_FILE_DIR = CMakeFiles\C__practice.dir
 
+build CMakeFiles/C__practice.dir/Nobo.cpp.obj: CXX_COMPILER__C__practice_Debug C$:/Users/HP/CLionProjects/C++practice/Nobo.cpp || cmake_object_order_depends_target_C__practice
+  DEP_FILE = CMakeFiles\C__practice.dir\Nobo.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\C__practice.dir
+  OBJECT_FILE_DIR = CMakeFiles\C__practice.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target C__practice
@@ -63,7 +69,7 @@ build CMakeFiles/C__practice.dir/main.cpp.obj: CXX_COMPILER__C__practice_Debug C
 #############################################
 # Link the executable C__practice.exe
 
-build C__practice.exe: CXX_EXECUTABLE_LINKER__C__practice_Debug CMakeFiles/C__practice.dir/main.cpp.obj
+build C__practice.exe: CXX_EXECUTABLE_LINKER__C__practice_Debug CMakeFiles/C__practice.dir/main.cpp.obj CMakeFiles/C__practice.dir/Nobo.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\C__practice.dir
