@@ -8,11 +8,13 @@ public:
 class Employee:public AbstractEmployee
 {
 private:
-    string name;
     int age;
     string characterstics;
+protected:
+    string name;
 
 public:
+
 
     void setName(string Name)
     {
@@ -70,7 +72,7 @@ public:
     }
     void Fixbug()
     {
-        cout<<getname()<<"Fixed bug using"<<Favprogrammnerlanguage1<<endl;
+        cout<<name<<"Fixed bug using"<<Favprogrammnerlanguage1<<endl;
     }
 };
 int main()
