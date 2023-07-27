@@ -75,11 +75,36 @@ public:
         cout<<name<<"Fixed bug using"<<Favprogrammnerlanguage1<<endl;
     }
 };
+
+
+class teacher:public Employee
+{
+public:
+    string favteacher1;
+
+public:
+    teacher(string name, int age, string characterstics,
+            string favteacher) : Employee(name, age, characterstics) {
+
+        favteacher1=favteacher;
+
+    }
+    void printx()
+    {
+        cout<<getname()<<" Favteacher-- "<<favteacher1<<endl;
+    }
+
+
+};
+
 int main()
 {
     Devloper d=Devloper("Saldina ",29," Good "," c++");
     d.Fixbug();
     d.AskForPromotion();
+    teacher t=teacher("Hama",29,"Good","Gama");
+    t.printx();
+
 
 }
 
