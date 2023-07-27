@@ -58,6 +58,10 @@ public:
             cout<<"not promoted"<<endl;
         }
     }
+    virtual void work()
+    {
+        cout<<name<<"is writing Favourite programming/checking email/task backlog" <<endl;
+    }
 
 };
 class Devloper:public Employee
@@ -73,6 +77,10 @@ public:
     void Fixbug()
     {
         cout<<name<<"Fixed bug using"<<Favprogrammnerlanguage1<<endl;
+    }
+    void work()
+    {
+    cout<<name<<"is writing"<<Favprogrammnerlanguage1<<"code"<<endl;
     }
 };
 
@@ -93,6 +101,10 @@ public:
     {
         cout<<getname()<<" Favteacher-- "<<favteacher1<<endl;
     }
+    void work()
+    {
+        cout<<name<<"is my"<<favteacher1<<" teacher "<<endl;
+    }
 
 
 };
@@ -100,10 +112,17 @@ public:
 int main()
 {
     Devloper d=Devloper("Saldina ",29," Good "," c++");
-    d.Fixbug();
-    d.AskForPromotion();
     teacher t=teacher("Hama",29,"Good","Gama");
-    t.printx();
+
+    d.work();
+    t.work();
+//if we do it with pointer
+     Employee* e1=&d;
+     Employee* e2=&t;
+     e1->work();
+     e2->work();
+
+
 
 
 }

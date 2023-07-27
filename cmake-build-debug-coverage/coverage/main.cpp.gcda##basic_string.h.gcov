@@ -543,32 +543,32 @@ call    0 never executed
         -:  530:      // 3076. basic_string CTAD ambiguity
         -:  531:      template<typename = _RequireAllocator<_Alloc>>
         -:  532:#endif
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IS3_EEPKcRKS3_ called 3 returned 100% blocks executed 73%
-        3:  533:      basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
-        3:  534:      : _M_dataplus(_M_local_data(), __a)
-        3:  534-block  0
-call    0 returned 3
-call    1 returned 3
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IS3_EEPKcRKS3_ called 6 returned 100% blocks executed 73%
+        6:  533:      basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
+        6:  534:      : _M_dataplus(_M_local_data(), __a)
+        6:  534-block  0
+call    0 returned 6
+call    1 returned 6
         -:  535:      {
-       3*:  536:	const _CharT* __end = __s ? __s + traits_type::length(__s)
-branch  0 taken 3 (fallthrough)
+       6*:  536:	const _CharT* __end = __s ? __s + traits_type::length(__s)
+branch  0 taken 6 (fallthrough)
 branch  1 taken 0
-        3:  536-block  0
-call    2 returned 3
-branch  3 taken 3 (fallthrough)
+        6:  536-block  0
+call    2 returned 6
+branch  3 taken 6 (fallthrough)
 branch  4 taken 0 (throw)
-        3:  536-block  1
+        6:  536-block  1
     %%%%%:  536-block  2
         -:  537:	  // We just need a non-null pointer here to get an exception:
         -:  538:	  : reinterpret_cast<const _CharT*>(__alignof__(_CharT));
-        3:  539:	_M_construct(__s, __end, random_access_iterator_tag());
-        3:  539-block  0
-call    0 returned 3
-branch  1 taken 3 (fallthrough)
+        6:  539:	_M_construct(__s, __end, random_access_iterator_tag());
+        6:  539-block  0
+call    0 returned 6
+branch  1 taken 6 (fallthrough)
 branch  2 taken 0 (throw)
     $$$$$:  539-block  1
-        3:  540:      }
-        3:  540-block  0
+        6:  540:      }
+        6:  540-block  0
     $$$$$:  540-block  1
 call    0 never executed
         -:  541:

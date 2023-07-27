@@ -12,147 +12,231 @@
         -:    8:class Employee:public AbstractEmployee
         -:    9:{
         -:   10:private:
-        -:   11:    string name;
-        -:   12:    int age;
-        -:   13:    string characterstics;
-        -:   14:
-        -:   15:public:
-        -:   16:
-        -:   17:    void setName(string Name)
-        -:   18:    {
-        -:   19:        name= Name;
-        -:   20:    }
-        -:   21:    string getname()
-        -:   22:    {
-        -:   23:        return name;
-        -:   24:    }
-        -:   25:    void setAge(int Age)
-        -:   26:    {
-        -:   27:        if(Age>=18)
-        -:   28:        {
-        -:   29:            age=Age;
-        -:   30:        }
-        -:   31:    }
-        -:   32:    int getAge()
-        -:   33:    {
-        -:   34:        return age;
-        -:   35:    }
-function _ZN8EmployeeC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiS5_ called 1 returned 100% blocks executed 70%
-        1:   36:    Employee(string name, int age, string characterstics ) {
-        1:   36-block  0
-call    0 returned 1
-call    1 returned 1
-call    2 returned 1
-        1:   37:        this->name = name;
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
+        -:   11:    int age;
+        -:   12:    string characterstics;
+        -:   13:protected:
+        -:   14:    string name;
+        -:   15:
+        -:   16:public:
+        -:   17:
+        -:   18:
+        -:   19:    void setName(string Name)
+        -:   20:    {
+        -:   21:        name= Name;
+        -:   22:    }
+        -:   23:    string getname()
+        -:   24:    {
+        -:   25:        return name;
+        -:   26:    }
+        -:   27:    void setAge(int Age)
+        -:   28:    {
+        -:   29:        if(Age>=18)
+        -:   30:        {
+        -:   31:            age=Age;
+        -:   32:        }
+        -:   33:    }
+        -:   34:    int getAge()
+        -:   35:    {
+        -:   36:        return age;
+        -:   37:    }
+function _ZN8EmployeeC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiS5_ called 2 returned 100% blocks executed 70%
+        2:   38:    Employee(string name, int age, string characterstics ) {
+        2:   38-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+        2:   39:        this->name = name;
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-        1:   38:        this->age=age;
-        1:   39:        this->characterstics=characterstics;
-        1:   39-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
+        2:   40:        this->age=age;
+        2:   41:        this->characterstics=characterstics;
+        2:   41-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-        1:   40:    }
-        1:   40-block  0
-    $$$$$:   40-block  1
+        2:   42:    }
+        2:   42-block  0
+    $$$$$:   42-block  1
 call    0 never executed
-    $$$$$:   40-block  2
+    $$$$$:   42-block  2
 call    1 never executed
-        -:   41:
-        -:   42:
-        -:   43:    void overall()
-        -:   44:    {
-        -:   45:        cout<<name<<" "<<age<<" "<<characterstics<<endl;
-        -:   46:
-        -:   47:    }
+        -:   43:
+        -:   44:
+        -:   45:    void overall()
+        -:   46:    {
+        -:   47:        cout<<name<<" "<<age<<" "<<characterstics<<endl;
+        -:   48:
+        -:   49:    }
 function _ZN8Employee15AskForPromotionEv called 0 returned 0% blocks executed 0%
-    #####:   48:    void AskForPromotion()
-        -:   49:    {
-    #####:   50:        if(age>=35)
-    %%%%%:   50-block  0
+    #####:   50:    void AskForPromotion()
+        -:   51:    {
+    #####:   52:        if(age>=35)
+    %%%%%:   52-block  0
 branch  0 never executed
 branch  1 never executed
-        -:   51:        {
-    #####:   52:            cout<<"Promoted"<<endl;
-    %%%%%:   52-block  0
+        -:   53:        {
+    #####:   54:            cout<<"Promoted"<<endl;
+    %%%%%:   54-block  0
 call    0 never executed
 call    1 never executed
-        -:   53:        }
-        -:   54:        else
-        -:   55:        {
-    #####:   56:            cout<<"not promoted"<<endl;
-    %%%%%:   56-block  0
+        -:   55:        }
+        -:   56:        else
+        -:   57:        {
+    #####:   58:            cout<<"not promoted"<<endl;
+    %%%%%:   58-block  0
 call    0 never executed
 call    1 never executed
-        -:   57:        }
-    #####:   58:    }
-        -:   59:
-        -:   60:};
-        -:   61:class Devloper:Employee
-        -:   62:{
-        -:   63:public:
-        -:   64:    string Favprogrammnerlanguage1;
+        -:   59:        }
+    #####:   60:    }
+function _ZN8Employee4workEv called 0 returned 0% blocks executed 0%
+    #####:   61:    virtual void work()
+        -:   62:    {
+    #####:   63:        cout<<name<<"is writing Favourite programming/checking email/task backlog" <<endl;
+    %%%%%:   63-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    #####:   64:    }
+        -:   65:
+        -:   66:};
+        -:   67:class Devloper:public Employee
+        -:   68:{
+        -:   69:public:
+        -:   70:    string Favprogrammnerlanguage1;
 function _ZN8DevloperC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiS5_S5_ called 1 returned 100% blocks executed 50%
-        1:   65:    Devloper(string name, int age, string characterstics,
-        1:   66:             string Favprogrammnerlanguage) : Employee(name, age, characterstics) {
-        1:   66-block  0
+        1:   71:    Devloper(string name, int age, string characterstics,
+        1:   72:             string Favprogrammnerlanguage) : Employee(name, age, characterstics) {
+        1:   72-block  0
 call    0 returned 1
 call    1 returned 1
 branch  2 taken 1 (fallthrough)
 branch  3 taken 0 (throw)
-        1:   66-block  1
+        1:   72-block  1
 call    4 returned 1
 branch  5 taken 1 (fallthrough)
 branch  6 taken 0 (throw)
-        1:   66-block  2
+        1:   72-block  2
 call    7 returned 1
 call    8 returned 1
 call    9 returned 1
-    $$$$$:   66-block  3
+    $$$$$:   72-block  3
 call   10 never executed
-    $$$$$:   66-block  4
-    $$$$$:   66-block  5
+    $$$$$:   72-block  4
+    $$$$$:   72-block  5
 call   11 never executed
-    $$$$$:   66-block  6
+    $$$$$:   72-block  6
 call   12 never executed
-        -:   67:
-        1:   68:            Favprogrammnerlanguage1=Favprogrammnerlanguage;
+        -:   73:
+        1:   74:            Favprogrammnerlanguage1=Favprogrammnerlanguage;
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        -:   69:
-        1:   70:    }
-        1:   70-block  0
-    $$$$$:   70-block  1
+        -:   75:
+        1:   76:    }
+        1:   76-block  0
+    $$$$$:   76-block  1
 call    0 never executed
-    $$$$$:   70-block  2
+    $$$$$:   76-block  2
 call    1 never executed
-        -:   71:    void Fixbug()
-        -:   72:    {
-        -:   73:        cout<<getname()<<"Fixed bug using"<<Favprogrammnerlanguage1<<endl;
-        -:   74:    }
-        -:   75:};
-function main called 1 returned 100% blocks executed 49%
-        1:   76:int main()
-        -:   77:{
-        2:   78:    Devloper d=Devloper("Saldina",29,"Good","c++");
-        1:   78-block  0
+        -:   77:    void Fixbug()
+        -:   78:    {
+        -:   79:        cout<<name<<"Fixed bug using"<<Favprogrammnerlanguage1<<endl;
+        -:   80:    }
+function _ZN8Devloper4workEv called 2 returned 100% blocks executed 100%
+        2:   81:    void work()
+        -:   82:    {
+        2:   83:    cout<<name<<"is writing"<<Favprogrammnerlanguage1<<"code"<<endl;
+        2:   83-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+call    3 returned 2
+call    4 returned 2
+        2:   84:    }
+        -:   85:};
+        -:   86:
+        -:   87:
+        -:   88:class teacher:public Employee
+        -:   89:{
+        -:   90:public:
+        -:   91:    string favteacher1;
+        -:   92:
+        -:   93:public:
+function _ZN7teacherC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiS5_S5_ called 1 returned 100% blocks executed 50%
+        1:   94:    teacher(string name, int age, string characterstics,
+        1:   95:            string favteacher) : Employee(name, age, characterstics) {
+        1:   95-block  0
 call    0 returned 1
 call    1 returned 1
 branch  2 taken 1 (fallthrough)
 branch  3 taken 0 (throw)
-        1:   78-block  1
+        1:   95-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   95-block  2
+call    7 returned 1
+call    8 returned 1
+call    9 returned 1
+    $$$$$:   95-block  3
+call   10 never executed
+    $$$$$:   95-block  4
+    $$$$$:   95-block  5
+call   11 never executed
+    $$$$$:   95-block  6
+call   12 never executed
+        -:   96:
+        1:   97:        favteacher1=favteacher;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   98:
+        1:   99:    }
+        1:   99-block  0
+    $$$$$:   99-block  1
+call    0 never executed
+    $$$$$:   99-block  2
+call    1 never executed
+        -:  100:    void printx()
+        -:  101:    {
+        -:  102:        cout<<getname()<<" Favteacher-- "<<favteacher1<<endl;
+        -:  103:    }
+function _ZN7teacher4workEv called 2 returned 100% blocks executed 100%
+        2:  104:    void work()
+        -:  105:    {
+        2:  106:        cout<<name<<"is my"<<favteacher1<<" teacher "<<endl;
+        2:  106-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+call    3 returned 2
+call    4 returned 2
+        2:  107:    }
+        -:  108:
+        -:  109:
+        -:  110:};
+        -:  111:
+function main called 1 returned 100% blocks executed 47%
+        1:  112:int main()
+        -:  113:{
+        2:  114:    Devloper d=Devloper("Saldina ",29," Good "," c++");
+        1:  114-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  114-block  1
 call    4 returned 1
 call    5 returned 1
 branch  6 taken 1 (fallthrough)
 branch  7 taken 0 (throw)
-        1:   78-block  2
+        1:  114-block  2
 call    8 returned 1
 call    9 returned 1
 branch 10 taken 1 (fallthrough)
 branch 11 taken 0 (throw)
-        1:   78-block  3
+        1:  114-block  3
 call   12 returned 1
 branch 13 taken 1 (fallthrough)
 branch 14 taken 0 (throw)
@@ -161,13 +245,76 @@ call   16 returned 1
 call   17 returned 1
 call   18 returned 1
 call   19 returned 1
-    $$$$$:   78-block  4
-    $$$$$:   78-block  5
-    $$$$$:   78-block  6
-    $$$$$:   78-block  7
-    $$$$$:   78-block  8
-    $$$$$:   78-block  9
-        1:   79:}
+    $$$$$:  114-block  4
+    $$$$$:  114-block  5
+    $$$$$:  114-block  6
+    $$$$$:  114-block  7
+    $$$$$:  114-block  8
+    $$$$$:  114-block  9
+        2:  115:    teacher t=teacher("Hama",29,"Good","Gama");
 call    0 returned 1
-        1:   79-block  0
-        -:   80:
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  115-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  115-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  115-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:  115-block  3
+    $$$$$:  115-block  4
+    $$$$$:  115-block  5
+    $$$$$:  115-block  6
+    $$$$$:  115-block  7
+    $$$$$:  115-block  8
+        -:  116:
+        1:  117:    d.work();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  118:    t.work();
+        1:  118-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  119://if we do it with pointer
+        1:  120:     Employee* e1=&d;
+        1:  121:     Employee* e2=&t;
+        1:  122:     e1->work();
+        1:  122-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  123:     e2->work();
+        1:  123-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  124:
+        -:  125:
+        -:  126:
+        -:  127:
+        1:  128:}
+        1:  128-block  0
+call    0 returned 1
+call    1 returned 1
+        1:  128-block  1
+    $$$$$:  128-block  2
+call    2 never executed
+    $$$$$:  128-block  3
+call    3 never executed
+        -:  129:
