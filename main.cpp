@@ -60,7 +60,7 @@ public:
     }
 
 };
-class Devloper:Employee
+class Devloper:public Employee
 {
 public:
     string Favprogrammnerlanguage1;
@@ -79,5 +79,7 @@ int main()
 {
     Devloper d=Devloper("Saldina ",29," Good "," c++");
     d.Fixbug();
+    d.AskForPromotion();
+
 }
 
