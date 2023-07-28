@@ -139,6 +139,39 @@ build c__practice-1.exe: CXX_EXECUTABLE_LINKER__c__practice-1_Debug CMakeFiles/c
   TARGET_IMPLIB = libc__practice-1.dll.a
   TARGET_PDB = c__practice-1.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target c__practice-2
+
+
+#############################################
+# Order-only phony target for c__practice-2
+
+build cmake_object_order_depends_target_c__practice-2: phony || CMakeFiles/c__practice-2.dir
+
+build CMakeFiles/c__practice-2.dir/Pointers/initialization.cpp.obj: CXX_COMPILER__c__practice-2_Debug C$:/Users/HP/CLionProjects/C++practice/Pointers/initialization.cpp || cmake_object_order_depends_target_c__practice-2
+  DEP_FILE = CMakeFiles\c__practice-2.dir\Pointers\initialization.cpp.obj.d
+  FLAGS = --coverage -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\c__practice-2.dir
+  OBJECT_FILE_DIR = CMakeFiles\c__practice-2.dir\Pointers
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target c__practice-2
+
+
+#############################################
+# Link the executable c__practice-2.exe
+
+build c__practice-2.exe: CXX_EXECUTABLE_LINKER__c__practice-2_Debug CMakeFiles/c__practice-2.dir/Pointers/initialization.cpp.obj
+  FLAGS = --coverage -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\c__practice-2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = c__practice-2.exe
+  TARGET_IMPLIB = libc__practice-2.dll.a
+  TARGET_PDB = c__practice-2.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -171,6 +204,8 @@ build C__practice_0: phony C__practice_0.exe
 
 build c__practice-1: phony c__practice-1.exe
 
+build c__practice-2: phony c__practice-2.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -179,7 +214,7 @@ build c__practice-1: phony c__practice-1.exe
 #############################################
 # Folder: C:/Users/HP/CLionProjects/C++practice/cmake-build-debug-coverage
 
-build all: phony C__practice.exe C__practice_0.exe c__practice-1.exe
+build all: phony C__practice.exe C__practice_0.exe c__practice-1.exe c__practice-2.exe
 
 # =============================================================================
 # Built-in targets

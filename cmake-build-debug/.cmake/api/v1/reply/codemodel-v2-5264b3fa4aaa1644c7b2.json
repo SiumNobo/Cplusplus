@@ -17,7 +17,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -34,7 +35,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -59,6 +61,13 @@
 					"id" : "c__practice-1::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-c__practice-1-Debug-3d2656467421082a58ff.json",
 					"name" : "c__practice-1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "c__practice-2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-c__practice-2-Debug-ad365119f47e7135affe.json",
+					"name" : "c__practice-2",
 					"projectIndex" : 0
 				}
 			]
